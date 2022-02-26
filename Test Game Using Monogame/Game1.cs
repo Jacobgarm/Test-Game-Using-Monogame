@@ -42,6 +42,7 @@ namespace Test_Game_Using_Monogame
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || state.IsKeyDown(Keys.Escape))
                 Exit();
 
+            //Movewment with WASD
             if (state.IsKeyDown(Keys.A))
                 position.X -= speed;
 
